@@ -4,6 +4,32 @@
 		    box-sizing: $box-model;
 }
 
+@mixin clear-fix {
+	display: table;
+	content: "";
+	clear: both;
+}
+
 *, *:after, *:before {
 	@include box-sizing(border-box);
+}
+
+.row:after {
+	@include clear-fix;
+}
+
+[class*='c-m'] {
+	float: left;
+}
+
+@for $i from 1 through 12 {
+	.c-m-#{$i} {
+		width: 100% * ($i / 12.0);
+	}
+}
+
+@media all and (max-width: 400px) {
+	[class*='c-m'] {
+		width: 100%;
+	}
 }
