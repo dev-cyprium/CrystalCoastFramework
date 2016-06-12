@@ -4,6 +4,12 @@ The aim of this framework is to force little design on the website itself. My ma
 
 At this point in time, it doesn't contain any javascript.
 
+# Preview
+You can preview the examples:
+  - Grid example: [open in browser](https://htmlpreview.github.io/?https://github.com/dev-cyprium/CrystalCoastFramework/blob/master/example/grid_example.html)
+  - Grid example(with flex layout): [open in browser](https://htmlpreview.github.io/?https://github.com/dev-cyprium/CrystalCoastFramework/blob/master/example/grid_example2.html)
+  - *TODO: ADD MORE*
+
 # Instalation
 You can download the source from github and compile it with SASS, or use download the raw compiled
 ready to use css file (`crystal-coast-min.css`).
