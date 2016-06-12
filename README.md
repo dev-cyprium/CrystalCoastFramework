@@ -8,6 +8,21 @@ At this point in time, it doesn't contain any javascript.
 You can download the source from github and compile it with SASS, or use download the raw compiled
 ready to use css file (`crystal-coast-min.css`).
 
+The project is broken down intro serval modules(components):
+  - Grid
+  - Reset
+  - Typography
+  - Ui
+  - Main
+
+ The compiled version creates one minified file containing all of the components.
+ You can change which components to include in your project by downloading the src and exclude
+ unwanted components from the `main.scss` file.
+ To compile the the source you can use:
+ ```shell
+ sass main.scss:output.css --style compressed
+ ```
+
 # Guide
 > TODO: WRITE
 
