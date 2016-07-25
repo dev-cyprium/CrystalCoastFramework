@@ -30,22 +30,7 @@ The project is broken down intro serval modules(components):
  ```
 
 # Guide
-## The Grid System
-Crystal coast supports 12 based grid system. To use it, you need to have a container element and place the desired layout of columns inside. All the elements in the container `MUST` add up to 12.
-Supported responsive classes are:
-  - m ( medium )
-  - xs ( extra small )
-  - TODO: ADD
-Example:
-```
-<div class="container">
-  <div class="c-m-6">6 column span element</div>
-  <div class="c-m-3">3 column span element</div>
-  <div class="c-m-3">3 column span element</div>
-</div>	
-```
-
-> TODO: WRITE MORE
+> TODO: WRITE
 
 # Change Log & download
 Stable version: 0.1 beta download: [src](#)/[minified](#)

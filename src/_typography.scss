@@ -11,8 +11,18 @@ h1 {
 	margin-bottom: 0.5em;
 }
 
+h2 {
+	font-size: 1.8em;
+	margin-bottom: 0.5em;
+	color: #404040;
+}
+
 p {
 	font-size: 1em;
 	color: #1a1a1a;
 	margin-bottom: 0.5em;
+}
+
+.text-uppercase {
+	text-transform: uppercase;
 }
