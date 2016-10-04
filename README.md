@@ -18,7 +18,7 @@ The project is broken down intro serval modules(components):
   - Grid
   - Reset
   - Typography
-  - Ui
+  - UI
   - Main
 
  The compiled version creates one minified file containing all of the components.
@@ -34,8 +34,6 @@ The project is broken down intro serval modules(components):
 Crystal coast supports 12 based grid system. To use it, you need to have a container element and place the desired layout of columns inside. All the elements in the container `MUST` add up to 12.
 Supported responsive classes are:
   - m ( medium )
-  - xs ( extra small )
-  - TODO: ADD
 Example:
 ```
 <div class="container">
