@@ -1,10 +1,12 @@
 /* Mixins */
+/*  Prefixes are used for cross-browser compitability */
 @mixin box-sizing($box-model) {
 	-webkit-box-sizing: $box-model;
 	   -moz-box-sizing: $box-model;
 		    box-sizing: $box-model;
 }
 
+/* Clearfix for float layout, IE 6 not supported */
 @mixin clear-fix {
 	display: table;
 	content: "";
@@ -12,12 +14,13 @@
 }
 
 /* Border-box */
+/* All elements use border-box to make calculations more easy */
 *, *:after, *:before {
 	@include box-sizing(border-box);
 }
 
 /* Grid layout */
-
+/* Padding inside columns */
 $grid-gutter: 1%;
 
 .container {
@@ -35,28 +38,10 @@ $grid-gutter: 1%;
 	padding-right: $grid-gutter;
 }
 
-/* TODO: add responsivness to columns */
+/* TODO: add responsivness to columns (l, xs, etc...) */
 @for $i from 1 through 12 {
 	.c-m-#{$i} {
 		width: 100% * ($i / 12);
-	}
-
-	@media all and (max-width: 1000px) and (min-width: 400px) {
-		.c-s-#{i} {
-			width: 100% * ($i / 12);
-		}
-	}
-
-	@media all and (min-width: 1800px) {
-		.c-ls-#{i} {
-			width: 100% * ($i / 12);
-		}
-	}
-
-	@media all and (max-width: 400px) {
-		.c-xs-#{i} {
-			width: 100% * ($i / 12);
-		}
 	}
 }
 
@@ -70,7 +55,7 @@ $grid-gutter: 1%;
 	}
 }
 
-/* Responsivness */
+/* Responsivness, when on mobile make columns fit screen space */
 @media all and (max-width: 400px) {
 	[class*='c-m'] {
 		width: 100%;
