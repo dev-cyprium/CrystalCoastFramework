@@ -1,3 +1,4 @@
+/* TODO: change style big title */
 .big-title {
 	text-align: center;
 	background-color: #808080;
@@ -8,11 +9,37 @@
 	}
 }
 
+/* Make the image responsive */
 .img-responsive {
 	width: 100%;
 	height: auto;
 }
 
+/* Make border round */
 .round {
 	border-radius: 50%;
+}
+
+/* The default navigation bar */
+.navbar-main {
+	background-color: #a6cfd5;
+	border-bottom: 1px solid #0f084b;
+	ul {
+		li { 
+			float: left;	
+			a {
+				display: inline-block;
+				text-decoration: none;
+				color: black;
+				padding: 30px;
+				@include transition(background-color 0.4s);
+				&:hover {
+					background-color: #c2e7d9;
+				}
+			}
+		}
+	}
+	ul:after {
+		@include clear-fix();
+	}
 }

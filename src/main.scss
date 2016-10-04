@@ -2,6 +2,8 @@
 	The main part of the framework, compile this with SASS to make the required .css files
 	If you want to exclude any module, just remove it here
 */
+@import 'mixins';
+
 @import 'reset';
 @import 'grid';
 @import 'typography';
