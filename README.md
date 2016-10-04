@@ -83,6 +83,14 @@ Example:
 > TODO: WRITE MORE
 
 # Change Log & download
-Stable version: 0.1 beta download: [src](#)/[minified](#)
+Stable version: 1.0 beta download: [src](#)/[minified](#)
+
+Change log:
+ 
+### version 1.0 beta
+
+ - Add navigation bar
+ - Move Mixins to a file including all mixins as helper functions
+ - Remove unfinished responsive support tags (l, xl, s, xs)
 
 > TODO: WRITE
