@@ -4,10 +4,16 @@ The aim of this framework is to force little design on the website itself. My ma
 
 At this point in time, it doesn't contain any javascript.
 
+This is a student project for ICT Collage by Stefan Kupresak ( github dev-cyprium ).
+
+It's used on a live web-site here as a project to lessons on course "Web design". You can check out the website [here](#).
+
+
 # Preview
 You can preview the examples:
   - Grid example: [open in browser](https://htmlpreview.github.io/?https://github.com/dev-cyprium/CrystalCoastFramework/blob/master/example/grid_example.html)
   - Grid example(with flex layout): [open in browser](https://htmlpreview.github.io/?https://github.com/dev-cyprium/CrystalCoastFramework/blob/master/example/grid_example2.html)
+  - Navigation bar example: [open in browser](https://htmlpreview.github.io/?https://github.com/dev-cyprium/CrystalCoastFramework/blob/master/example/navigation_example.html)
   - *TODO: ADD MORE*
 
 # Instalation
@@ -28,20 +34,51 @@ The project is broken down intro serval modules(components):
  ```shell
  sass main.scss:output.css --style compressed
  ```
+ **Warning!!** Mixins are required in order for the other components to work. ( Also, they need to be included **first** ).
 
 # Guide
 ## The Grid System
-Crystal coast supports 12 based grid system. To use it, you need to have a container element and place the desired layout of columns inside. All the elements in the container `MUST` add up to 12.
+Crystal coast supports 12 based grid system. To use it, you need to have a container element and place the desired layout of columns inside. All the elements in the container **MUST** add up to 12.
 Supported responsive classes are:
   - m ( medium )
-Example:
-```
+Example 1:
+```html
 <div class="container">
-  <div class="c-m-6">6 column span element</div>
-  <div class="c-m-3">3 column span element</div>
-  <div class="c-m-3">3 column span element</div>
+  <div class="row">
+    <div class="c-m-6">6 column span element</div>
+    <div class="c-m-3">3 column span element</div>
+    <div class="c-m-3">3 column span element</div>
+  </div>
 </div>	
 ```
+Example 2:
+```html
+<div class="container">
+  <div class="row">
+      <div class="c-m-2">2 column span element</div>
+      <div class="c-m-8">8 column span element</div>
+      <div class="c-m-2">2 column span element</div>
+  </div>
+</div>
+```
+
+## Navigation bar
+Crystal coast supports the main navigation bar. To use it, just add the class `.navbar-main` to the nav tag and nest your links in the `<ul> <li> <a>` tags. You can highlit any item in the navigation bar with the class `.active` added to the `<a>` tag.
+
+The navigation bar isn't supported for mobile just yet.
+
+Example:
+```html
+  <nav class="navbar-main">
+    <ul>
+      <li><a href="#" class="active">Link 1</a></li>
+      <li><a href="#">Link 2</a></li>
+      <li><a href="#">Link 3</a></li>
+      <li><a href="#">Link 4</a></li>
+    </ul>
+  </nav>
+```
+
 
 > TODO: WRITE MORE
 

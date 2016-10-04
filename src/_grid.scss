@@ -1,23 +1,11 @@
-/* Mixins */
-@mixin box-sizing($box-model) {
-	-webkit-box-sizing: $box-model;
-	   -moz-box-sizing: $box-model;
-		    box-sizing: $box-model;
-}
-
-@mixin clear-fix {
-	display: table;
-	content: "";
-	clear: both;
-}
-
 /* Border-box */
+/* All elements use border-box to make calculations more easy */
 *, *:after, *:before {
 	@include box-sizing(border-box);
 }
 
 /* Grid layout */
-
+/* Padding inside columns */
 $grid-gutter: 1%;
 
 .container {
