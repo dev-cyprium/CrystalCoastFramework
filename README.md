@@ -64,13 +64,15 @@ Example 2:
 ```
 
 ## Navigation bar
-Crystal coast supports the main navigation bar. To use it, just add the class `.navbar-main` to the nav tag and nest your links in the `<ul> <li> <a>` tags. The navigation bar isn't supported for mobile just yet.
+Crystal coast supports the main navigation bar. To use it, just add the class `.navbar-main` to the nav tag and nest your links in the `<ul> <li> <a>` tags. You can highlit any item in the navigation bar with the class `.active` added to the `<a>` tag.
+
+The navigation bar isn't supported for mobile just yet.
 
 Example:
 ```html
   <nav class="navbar-main">
     <ul>
-      <li><a href="#">Link 1</a></li>
+      <li><a href="#" class="active">Link 1</a></li>
       <li><a href="#">Link 2</a></li>
       <li><a href="#">Link 3</a></li>
       <li><a href="#">Link 4</a></li>
