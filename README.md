@@ -28,19 +28,33 @@ The project is broken down intro serval modules(components):
  ```shell
  sass main.scss:output.css --style compressed
  ```
+ **Warning!!** Mixins are required in order for the other components to work. ( Also, they need to be included **first** ).
 
 # Guide
 ## The Grid System
 Crystal coast supports 12 based grid system. To use it, you need to have a container element and place the desired layout of columns inside. All the elements in the container `MUST` add up to 12.
 Supported responsive classes are:
   - m ( medium )
-Example:
-```
+
+Example 1:
+```html
 <div class="container">
-  <div class="c-m-6">6 column span element</div>
-  <div class="c-m-3">3 column span element</div>
-  <div class="c-m-3">3 column span element</div>
+  <div class="row">
+    <div class="c-m-6">6 column span element</div>
+    <div class="c-m-3">3 column span element</div>
+    <div class="c-m-3">3 column span element</div>
+  </div>
 </div>	
+```
+Example 2:
+```html
+<div class="container">
+  <div class="row">
+      <div class="c-m-2">2 column span element</div>
+      <div class="c-m-8">8 column span element</div>
+      <div class="c-m-2">2 column span element</div>
+  </div>
+</div>
 ```
 
 > TODO: WRITE MORE
