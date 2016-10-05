@@ -23,6 +23,15 @@ p {
 	margin-bottom: 0.5em;
 }
 
+a {
+	text-decoration: none;
+	color: #37718e;
+	&:hover {
+		color: #254e70;
+	}
+}
+
+
 .text-uppercase {
 	text-transform: uppercase;
 }
